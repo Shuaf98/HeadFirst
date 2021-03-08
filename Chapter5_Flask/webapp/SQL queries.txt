@@ -1,0 +1,16 @@
+Select the database:
+	use datarequestDB;
+
+View the database:
+	Select * from log;
+
+Count rows:
+	count(*) from log;
+
+Most used letters:
+	select count(letters) as 'count', letters from log
+	group by letters
+	order by count desc
+	limit 1;
+Distinct Ips:
+	select distinct ip from log;
